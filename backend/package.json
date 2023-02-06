@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.ts",
+    "build": " prisma generate --schema=src/prisma/schema.prisma",
     "start": "ts-node --esm src/index.ts"
   },
   "keywords": [],
