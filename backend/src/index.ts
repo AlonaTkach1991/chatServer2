@@ -16,7 +16,8 @@ import typeDefs from "./graphql/typeDefs";
 import { GraphQLContext, Session, SubscriptionContext } from "./util/types";
 import * as dotenv from "dotenv";
 import cors from "cors";
-import { json } from "body-parser";
+import pkg from 'body-parser';
+const { json } = pkg;
 
 const main = async () => {
   dotenv.config();
